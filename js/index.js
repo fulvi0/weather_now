@@ -2,7 +2,10 @@ $(document).ready(function() {
   $("#getGeo").click(function() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
-        $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat="+position.coords.latitude+"&lon="+position.coords.longitude+"&appid=8191185ae7a955c5e64f8b6cffa991df", function(result) {
+        console.log(position.coords.latitude);
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
+        $.getJSON("https://api.wunderground.com/api/cb1049bca912a982/geolookup/q/"+lat+ "," + lon+".json", function(result) {
           $.each(result, function(i, field) {
             $("#location").append(field + " ");
           });
