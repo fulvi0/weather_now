@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html >
+<html>
   <head>
     <meta charset="UTF-8">
     <title>Show the Local Weather</title>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css'>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://use.fontawesome.com/4e2564ef51.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>How's the weather <a class="btn btn-primary btn-lg" id="getGeo" role="button">Now !</a></h1>
-        <h3 id="location">...</h3>
+        <h1>How's the weather <a class="btn btn-primary btn-lg" id="getGeo" role="button">Now !</a>
+          <br>
+          <small><div id="location">...</div></small>
+        </h1>
+        <hr>
+        <strong>
+          <a class="btn btn-primary" id="temperature" role="button">N</a>
+          <div id="show_temp">...</div>
+        </strong>
       </div>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://use.fontawesome.com/3cb58a1f13.js'></script>
     <script src="js/index.js"></script>
   </body>
 </html>
