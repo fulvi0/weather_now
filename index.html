@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html >
+<html>
   <head>
     <meta charset="UTF-8">
     <title>Show the Local Weather</title>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css'>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>How's the weather <a class="btn btn-primary btn-lg" id="getGeo" role="button">Now !</a></h1>
-        <div id="location">...</div>
+        <h1>How's the weather<br>
+          <a class="btn btn-primary btn-lg" id="getGeo" role="button">Now !</a>
+          <br>
+          <small><div id="location">...</div></small>
+        </h1>
+        <hr>
+        <h3 id="show_temp"></h3>
       </div>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
